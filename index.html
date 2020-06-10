@@ -11,12 +11,15 @@
 
     <!-- ------------------------landing page--------------------------------- -->
     <div id="start" class="text-center">
-        <img src="start.png"><br/>
-        <button class="btn btn-danger btn-block startbt" onclick="start()">Start</button>
+        <div class="col-md-4 offset-md-4">
+            <img src="start.png" class="card-img-top">
+            <button class="btn btn-danger btn-block startbt" onclick="start()">Start</button>
+        </div>
+        <br/>
     </div>
     <!-- --------------------game-------------------------- -->
     <div id="game" hidden >
-        <p class="text-center display-3 text-danger title">Rock Paper Scissor</p>
+        <p class="text-center display-4 text-danger title">Rock Paper Scissor</p>
         <div class="text-center score">
             <span>YOU</span>&nbsp;&nbsp;<span id="user" class="text-danger sc"></span>&nbsp;&nbsp;<span>-</span>&nbsp;
             <span id="com" class="text-danger sc"></span>&nbsp;&nbsp;<span>COM</span>
