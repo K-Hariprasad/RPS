@@ -11,25 +11,27 @@
 
     <!-- ------------------------landing page--------------------------------- -->
     <div id="start" class="text-center">
-        <p class="display-4 text-danger">R</p>
-        <p class="display-4 text-success">P</p>
-        <p class="display-4 text-primary">S</p>
-
+        <img src="start.png"><br/>
+        <button class="btn btn-danger btn-block startbt" onclick="start()">Start</button>
     </div>
     <!-- --------------------game-------------------------- -->
-    <div id="game" >
-        <div>
-            <h3 id="user"></h3>
-            <h3 id="com"></h3>
+    <div id="game" hidden >
+        <p class="text-center display-3 text-danger title">Rock Paper Scissor</p>
+        <div class="text-center score">
+            <span>YOU</span>&nbsp;&nbsp;<span id="user" class="text-danger sc"></span>&nbsp;&nbsp;<span>-</span>&nbsp;
+            <span id="com" class="text-danger sc"></span>&nbsp;&nbsp;<span>COM</span>
         </div>
+        <br/>
         <div class="text-center">
             <button class="btn bt" onclick="play(value)" value=1>R</button>
             <button class="btn bt" onclick="play(value)" value=2>P</button>
-            <button class="btn bt" onclick="play(value)" value=3>S</button>
-            
+            <button class="btn bt" onclick="play(value)" value=3>S</button>           
         </div>
+        <br/>
         <div class="text-center" id="res"></div>
                
+    </div>
+    <div id="result" class="display-3 text-center" hidden>
     </div>
     
 </body>

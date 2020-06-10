@@ -1,6 +1,14 @@
 var userPoints=0
 var comPoints=0
 
+function start(){
+    document.getElementById("start").hidden=true;
+    document.getElementById("game").hidden=false;
+    document.getElementById("user").innerHTML= userPoints;
+    document.getElementById("com").innerHTML=comPoints;
+
+}
+
 function play(user){
   var com = Math.floor(Math.random() * 3) + 1;
   document.getElementById("res").innerHTML=""
@@ -17,8 +25,8 @@ function play(user){
     userPoints+=1
     document.getElementById("user").innerHTML=userPoints
 
-    if(userPoints==20){
-    document.getElementById("res").innerHTML="You won the game .....!"
+    if(userPoints==10){
+    over();
     }
 
   }
@@ -27,10 +35,17 @@ function play(user){
     comPoints+=1
     document.getElementById("com").innerHTML=comPoints;
 
-    if(comPoints==20){
-        document.getElementById("res").innerHTML="Computer won the game .....!"
+    if(comPoints==10){
+        over();
         }
 
   }
 
+}
+
+function over(){
+    document.getElementById("game").hidden=true;
+    document.getElementById("result").hidden=false;
+    document.getElementById("result").innerHTML="You won the game .....!"
+    document.getElementById("result").innerHTML="Computer won the game .....!"
 }

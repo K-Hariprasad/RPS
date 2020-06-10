@@ -1,3 +1,38 @@
-#start{
-    margin: 10%;
+.title{
+   margin: 2%;
+   background-color: rgb(252, 249, 228);
+   padding: 1%;
+   font-weight: bold;
+}
+img{
+    width: 1000px;
+}
+.startbt{
+    font-size: 40px;
+}
+.score{
+    font-size: 40px;
+}
+.sc{
+    font-size: 50px;
+    font-weight: bold;
+}
+.bt{
+    background-color: rgb(252, 249, 228);
+    color: #dc3545;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 1%;
+    font-size: 80px;
+    border:  #dc3545 solid;
+
+}
+.bt:hover{
+    color: rgb(252, 249, 228);
+    background-color : #dc3545 ;
+    transform: scale(1.1);
+}
+#res{
+    font-size: 60px;
 }
