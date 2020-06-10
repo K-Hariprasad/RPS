@@ -46,6 +46,6 @@ function play(user){
 function over(){
     document.getElementById("game").hidden=true;
     document.getElementById("result").hidden=false;
-    document.getElementById("result").innerHTML="You won the game .....!"
-    document.getElementById("result").innerHTML="Computer won the game .....!"
+    document.getElementById("resultmsg").innerHTML="You won the game .....!"
+    document.getElementById("resultmsg").innerHTML="Computer won the game .....!"
 }
