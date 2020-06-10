@@ -26,6 +26,7 @@ function play(user){
     document.getElementById("user").innerHTML=userPoints
 
     if(userPoints==10){
+document.getElementById("resultmsg").innerHTML="You won the game .....!"
     over();
     }
 
@@ -36,6 +37,8 @@ function play(user){
     document.getElementById("com").innerHTML=comPoints;
 
     if(comPoints==10){
+document.getElementById("resultmsg").innerHTML="Computer won the game .....!"
+
         over();
         }
 
@@ -46,6 +49,5 @@ function play(user){
 function over(){
     document.getElementById("game").hidden=true;
     document.getElementById("result").hidden=false;
-    document.getElementById("resultmsg").innerHTML="You won the game .....!"
-    document.getElementById("resultmsg").innerHTML="Computer won the game .....!"
-}
+    }
+    
